@@ -15,29 +15,37 @@
 <body>
     <!--Header-->
     <header>
-        <nav class="navigation navigation--margin">
-            <h1 class="navigation__logo navigation__logo--style">Cahee</h1>
-            <ul class="navigation-list navigation-list--styling">
-                <li class="navigation-list__item">
-                    <a href="#" class="navigation__link">HOME</a>
-                </li>
-                <li class="navigation-list__item navigation-list__item--margin">
-                    <a href="#section2" class="navigation__link">ABOUT</a>
-                </li>
-                <li class="navigation-list__item navigation-list__item--margin">
-                    <a href="#section3" class="navigation__link">SERVICES</a>
-                </li>
-                <li class="navigation-list__item navigation-list__item--margin">
-                    <a href="#section4" class="navigation__link">GALLERY</a>
-                </li>
-                <li class="navigation-list__item navigation-list__item--margin">
-                    <a href="#section5" class="navigation__link">BLOG</a>
-                </li>
-                <li class="navigation-list__item navigation-list__item--margin">
-                    <a href="#section6" class="navigation__link">CONTACT</a>
-                </li>
-            </ul>
+        <nav class="navigation ">
+            <input type="checkbox" name="headerlist" id="menulist">
+            <label for="menulist">
+                <ul class="menulist--styling">
+                    <li class="menulist__item menulist__item--logo">
+                        Cahee
+                    </li>
+                    <li class="menulist__item">
+                        <a href="#" class="navigation__link">HOME</a>
+                    </li>
+                    <li class="menulist__item ">
+                        <a href="#section2" class="navigation__link">ABOUT</a>
+                    </li>
+                    <li class="menulist__item ">
+                        <a href="#section3" class="navigation__link">SERVICES</a>
+                    </li>
+                    <li class="menulist__item ">
+                        <a href="#section4" class="navigation__link">GALLERY</a>
+                    </li>
+                    <li class="menulist__item ">
+                        <a href="#section5" class="navigation__link">BLOG</a>
+                    </li>
+                    <li class="menulist__item ">
+                        <a href="#section6" class="navigation__link">CONTACT</a>
+                    </li>
+                </ul>
+                <span class="menulist__icon"></span>
+            </label>
+
         </nav>
+        <!--Fresh Life-->
         <section class="FreshLife">
             <div class="FreshLife-block">
                 <h2 class="FreshLife-block__title">Fresh Life</h2>
@@ -52,21 +60,25 @@
                 <a href="#subscribe"><img src="web/image/img_header/scroll.png" alt="scroll"></a>
             </div>
         </section>
+        <!--About Us-->
         <section class="AboutUs" id="section2">
-            <div class="AboutUs-block">
-                <h2 class="AboutUs-block__title">About Us</h2>
-                <p class="AboutUs-block__text">
-                    Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum.
-                </p>
-                <p class="AboutUs-block__text AboutUs-block__text--width">
-                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-                </p>
-            </div>
-            <div class="AboutUs__photo">
-                <img src="web/image/img_header/img.png" alt="photo">
+            <div class="AboutUs__flex">
+                <div class="AboutUs__photo">
+                    <img src="web/image/img_header/img.png" alt="photo">
+                </div>
+                <div class="AboutUs-block">
+                    <h2 class="AboutUs-block__title">About Us</h2>
+                    <p class="AboutUs-block__text">
+                        Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum.
+                    </p>
+                    <p class="AboutUs-block__text AboutUs-block__text--width">
+                        Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                    </p>
+                </div>
             </div>
         </section>
     </header>
@@ -125,16 +137,24 @@
         <div class="gallery__container">
             <div class="gallery__containertop">
                 <div>
-                    <img src="web/image/img_gallery/img1.png" alt="img1">
+                    <img src="web/image/img_gallery/img1.jpg" alt="img1">
                 </div>
                 <div class="gallery__containertop--small">
-                    <img src="web/image/img_gallery/img2.jpg" alt="img2">
-                    <img src="web/image/img_gallery/img3.jpg" alt="img3">
+                    <div>
+                        <img src="web/image/img_gallery/img2.jpg" alt="img2">
+                    </div>
+                    <div class="gallery__containertop--small--padding">
+                        <img src="web/image/img_gallery/img3.jpg" alt="img3">
+                    </div>
                 </div>
             </div>
             <div class="gallery__containerbottom">
-                <img src="web/image/img_gallery/img4.jpg" alt="img4">
-                <img src="web/image/img_gallery/img5.jpg" alt="img5">
+                <div>
+                    <img src="web/image/img_gallery/img4.jpg" alt="img4">
+                </div>
+                <div>
+                    <img src="web/image/img_gallery/img5.jpg" alt="img5">
+                </div>
             </div>
         </div>
         <div>
