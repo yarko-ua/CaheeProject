@@ -41,12 +41,14 @@
             </ul>
             <span class="menulist__icon">
                 <div class="menucompact">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SERVICES</a>
-                    <a href="">GALLERY</a>
-                    <a href="">BLOG</a>
-                    <a href="">CONTACT</a>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#section2">ABOUT</a></li>
+                        <li><a href="#section3">SERVICES</a></li>
+                        <li><a href="#section4">GALLERY</a></li>
+                        <li><a href="#section5">BLOG</a></li>
+                        <li><a href="#section6">CONTACT</a></li>
+                    </ul>
                 </div>
             </span>
 
@@ -226,50 +228,53 @@
     <!--Contact and Footer-->
     <section class="contact" id="section6">
         <div class="contact__title">
-            <h1 class="contact__title--title">Contact</h1>
+            <h2 class="contact__title--title">Contact</h2>
             <p class="contact__title--text">For new projects, ideas, business or anything you'd like to
                 discuss, contsct with me!</p>
         </div>
-        <div class="contact__form">
-            <form action="#" method="GET">
-                <ul class="contact__list">
-                    <li class="contact__item">
-                        <input type="text" name="username" placeholder="Auskteez Tran">
-                    </li>
-                    <li class="contact__item">
-                        <input type="email" name="email" placeholder="Your email..">
-                    </li>
-                    <li class="contact__item">
-                        <input type="tel" name="phone number" placeholder="Your phone number..">
-                    </li>
-                    <li class="contact__item">
-                        <textarea name="message" placeholder="Your message.."></textarea>
-                    </li>
-                    <li class="contact__item">
-                        <button class="contact__button">Submit</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-        <div class="contact__contacts">
-            <h2 class="">ADDRESS</h2>
-            <p>123 city name, Street, city, country</p>
-            <h2>EMAIL</h2>
-            <p>cahee@domain.com</p>
-            <h2>PHONE</h2>
-            <p>+012 345 6789</p>
+        <div class="contactflex">
+            <div class="contact__form">
+                <form action="#" method="GET" id="contactform">
+                    <ul class="contact__list">
+                        <li class="contact__list--item">
+                            <input type="text" name="username" placeholder="Auskteez Tran">
+                        </li>
+                        <li class="contact__list--item">
+                            <input type="email" pattern="+000 00 000 00 00" name="email" placeholder="Your email.."
+                                required>
+                        </li>
+                        <li class="contact__list--item">
+                            <input type="tel" name="phone number" placeholder="Your phone number..">
+                        </li>
+                        <li class="contact__list--item">
+                            <textarea name="message" placeholder="Your message.."></textarea>
+                        </li>
+                        <li class="contact__list--item">
+                            <button form="contactform" type="submit" class="contact__button">Submit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="contact__contacts">
+                <h2>ADDRESS</h2>
+                <p>123 city name, Street, city, Country</p>
+                <h2>EMAIL</h2>
+                <p>cahee@domain.com</p>
+                <h2>PHONE</h2>
+                <p>+012 345 6789</p>
+            </div>
         </div>
     </section>
     <footer>
         <div class="footer__copy">
-            <div>&copy; 2515 company. All right reserved</div>
-        </div>
-        <div class="footer__logo">Cahee</div>
-        <div class="footer__author">
-            <div>Made with</div>
-            <div class="red">love</div>
-            <div>by Auskteez</div>
-        </div>
+            <div>&copy; 2515 company. <wbr> All right reserved</div>
+            </div>
+            <div class="footer__logo">Cahee</div>
+            <div class="footer__author">
+                <div>Made with</div>
+                <div class="red">love</div>
+                <div>by Auskteez</div>
+            </div>
     </footer>
 </body>
 
