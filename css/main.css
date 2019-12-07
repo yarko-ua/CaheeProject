@@ -42,12 +42,6 @@
     border-top: 3px solid #ff6033;
     cursor: pointer; }
 
-[name=headerlist] {
-  display: none;
-  position: fixed;
-  top: 50px;
-  right: 80px; }
-
 .menulist__icon {
   display: none;
   position: fixed;
@@ -55,6 +49,17 @@
   right: 5%;
   width: 30px;
   height: 30px; }
+
+.menucompact {
+  padding-top: 40px;
+  display: none;
+  transition: display 0.5s; }
+  .menucompact a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000; }
 
 @media screen and (max-width: 1020px) {
   .menulist__icon {
@@ -69,9 +74,11 @@
   .menulist--styling .menulist__item--logo {
     display: inline-block;
     margin-right: 70%; }
-  #menulist:checked + .menulist .menulist--styling li {
-    display: block;
-    background-color: goldenrod; } }
+  .menulist__icon:hover .menucompact {
+    display: block; }
+    .menulist__icon:hover .menucompact a:hover {
+      border-top: 3px solid #ff6033;
+      cursor: pointer; } }
 
 /* Fresh Life */
 .FreshLife {
