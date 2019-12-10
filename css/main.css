@@ -41,8 +41,11 @@
     border-top: 3px solid #ff6033;
     cursor: pointer; }
 
+#burger {
+  display: none; }
+
 .menulist__icon {
-  display: none;
+  display: block;
   position: fixed;
   top: 55px;
   right: 9%;
@@ -50,19 +53,23 @@
   height: 28px; }
 
 .menucompact {
-  padding-top: 40px;
-  position: relative;
-  right: 10px;
-  height: 250px;
-  margin-top: -10px;
+  position: absolute;
+  top: 110px;
+  height: 0;
+  width: 100%;
   display: none;
-  transition: display 0.5s; }
+  transition: all .5s linear;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.45);
+  background-image: linear-gradient(90deg, transparent, lightgrey, lightblue); }
   .menucompact a {
     display: block;
-    margin-bottom: 10px;
+    width: 100%;
+    color: #fff;
+    padding: 40px;
     text-decoration: none;
-    color: #000;
-    font-size: 13px; }
+    font-size: 24px;
+    border-top: 1px solid #b3b3b3; }
 
 .logolarge {
   display: none; }
@@ -176,16 +183,16 @@
         transform: translateY(5px); }
       .logolarge:focus + .menulist--styling .menulist__item--logo {
         display: none; }
-  .navigation__link {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 0; }
-    .navigation__link:hover {
-      border: none;
-      cursor: pointer; }
-    .navigation__link:active {
-      text-decoration: line-through; } }
+    .logolarge:focus + .menulist--styling .navigation__link {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 0; }
+      .logolarge:focus + .menulist--styling .navigation__link:hover {
+        border: none;
+        cursor: pointer; }
+      .logolarge:focus + .menulist--styling .navigation__link:active {
+        text-decoration: line-through; } }
 
 @media screen and (max-width: 525px) {
   .navigation {
@@ -209,25 +216,18 @@
     .menulist__icon:hover {
       cursor: pointer;
       box-shadow: 0px 0px 20px 8px orange; }
-    .menulist__icon .menucompact a {
-      font-size: 14px; }
   .menulist--styling {
     display: none; }
     .menulist--styling .menulist__item {
       display: none; }
-  .menucompact {
-    display: none; }
-  .menulist__icon:hover .menucompact {
-    display: block; }
-    .menulist__icon:hover .menucompact ul {
-      list-style-type: none; }
-    .menulist__icon:hover .menucompact a:hover {
-      background-color: sandybrown;
-      background-size: contain;
-      width: 65px;
-      border-radius: 5px;
+  #burger:checked ~ .menucompact {
+    display: block;
+    width: 100%;
+    height: 66vh;
+    transition: all .5s linear; }
+    #burger:checked ~ .menucompact a:hover {
       cursor: pointer;
-      width: fit-content; }
+      box-shadow: inset 530px 0px 300px #525252; }
   .logolarge {
     display: none; } }
 
